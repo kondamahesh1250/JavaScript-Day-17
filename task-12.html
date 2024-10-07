@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(task,callback){
+            callback();
+        }
+
+
+        task= +prompt("enter number");
+        
+        check(task,(task)=>{
+            if(task>0){
+                console.log("Completed");
+            }
+            else{
+                console.log("Not Completed");
+            }
+        })
+    </script>
+</body>
+</html>

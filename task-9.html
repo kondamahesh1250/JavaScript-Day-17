@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function input(a, callback) {
+            callback(a);
+        }
+        a = prompt("enter string ");
+
+        input(a, () => {
+            console.log(a.toUpperCase())
+            console.log(a.trim());
+        })
+    </script>
+</body>
+
+</html>

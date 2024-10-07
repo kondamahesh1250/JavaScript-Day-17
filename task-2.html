@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function process(a, callback) {
+            callback(a);
+        }
+        a = [1, 2, 3, 4, 5]
+        process(a, (a) => {
+            a.forEach(element => {
+                let i = element * 2;
+                let j = element ** 2;
+                console.log(i, j)
+            })
+        })
+    </script>
+</body>
+
+</html>

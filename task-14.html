@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function condition(a, callback) {
+            callback(a, b);
+        }
+
+        a = +prompt("enter number1 ");
+
+        condition(a, () => {
+            if (a < 0) {
+                console.log("Negative");
+            }
+            else {
+                console.log("Positive");
+            }
+        })
+    </script>
+</body>
+
+</html>

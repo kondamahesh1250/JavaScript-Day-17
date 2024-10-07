@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function step(a, callback) {
+            a.forEach((element, index) => {
+                console.log(element);
+                callback(index);
+            })
+        }
+
+        a = ["step 1", "step 2", "step 3", "step 4", "step 5"];
+
+        step(a, (index) => {
+            console.log(`step ${index + 1} completed`)
+        })
+    </script>
+</body>
+
+</html>

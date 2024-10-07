@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sort(object, callback) {
+            callback(object);
+        }
+
+        object = [{
+            "name": "mahesh",
+            "age": "21"
+        },
+        {
+            "name": "ravi",
+            "age": "20"
+        }]
+
+        sort(object, () => {
+            for (i in object) {
+                console.log(object[i]["name"].split("").sort().join(""))
+                console.log(object[i]["age"].split("").sort().join(""))
+            }
+        })
+    </script>
+</body>
+
+</html>

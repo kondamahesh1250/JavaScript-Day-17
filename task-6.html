@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function timer(callback) {
+            setTimeout(() => {
+                console.log("Countdown 5")
+            }, 1000)
+
+            setTimeout(() => {
+                console.log("Countdown 4")
+            }, 2000)
+            setTimeout(() => {
+                console.log("Countdown 3")
+            }, 3000)
+            setTimeout(() => {
+                console.log("Countdown 2")
+            }, 4000)
+
+            setTimeout(() => {
+                console.log("Countdown 1")
+            }, 5000)
+
+            
+            // setTimeout(()=>{
+            //     callback();
+            // },6000)
+            callback("Hello");
+        }
+
+        // timer(()=>{
+        //     console.log("Time's up!");
+        // })
+
+        timer((a) => {
+            setTimeout((a) => {
+                console.log(a);
+            }, 6000, a)
+        })
+    </script>
+</body>
+
+</html>

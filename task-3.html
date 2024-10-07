@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function call(a, callback) {
+            callback(a);
+        }
+        call("Hello", (a) => {
+            setTimeout((a) => {
+                console.log(a);
+            }, 10000, a)
+        })
+    </script>
+</body>
+
+</html>

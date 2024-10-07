@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+
+    <script>
+        let body = document.getElementById("body");
+        let btn = document.createElement("button");
+        btn.innerHTML = "Click";
+
+        function action(button, callback) {
+            callback(button);
+        }
+        action(btn, (button) => {
+            button.addEventListener("click", () => {
+                body.style.background = "Green";
+                body.innerHTML = "Hello";
+            });
+        });
+
+        document.body.appendChild(btn);
+    </script>
+</body>
+
+</html>
